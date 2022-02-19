@@ -12,16 +12,10 @@ tombolMau.addEventListener("click", function () {
     "src",
     "https://c.tenor.com/r2NutC5DjRkAAAAM/cute-in-love.gif"
   );
-});
-
-tombolMau.addEventListener("click", function () {
-  gambarTembak.setAttribute(
-    "src",
-    "https://c.tenor.com/r2NutC5DjRkAAAAM/cute-in-love.gif"
-  );
   const teks = "I Love You";
   paragraph.innerHTML = teks;
   tombolGak.style.position = "static";
+  this.preventDefault();
 });
 
 tombolGak.addEventListener("click", function () {
@@ -38,4 +32,5 @@ tombolGak.addEventListener("click", function () {
   this.style.position = "absolute";
   this.style.left = i + "px";
   this.style.top = j + "px";
+  this.preventDefault();
 });
